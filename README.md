@@ -17,7 +17,7 @@ Minimum requirements:
 Installation
 ---------------------------------
 
-You can install plugin:
+1) Install plugin:
 
 * Using git
 ```
@@ -37,9 +37,22 @@ unzip file.name.zip -d replication
 To learn how to install plugins as zip-archive follow 
 the link https://docs.moodle.org/33/en/Installing_plugins#Installing_via_uploaded_ZIP_file
 
+2) Check your instance's mode (by default it is slave)
+
+3) Cron job installed automatically during plugin's installation. Please check it
+
+4) If mode is ***master*** then check access to ssh's ***keys*** files
+
+5) If mode is ***slave*** then check access to ssh's ***authorized_keys*** file (matched to master's ***keys*** files)
+
+6) If mode is ***master*** then add remote hosts which have to be synchronized
+
 
 Usage
 ---------------------------------
 
-Configuration page is accessed at admin's dashboard:
+Plugin's configuration page is accessed at admin's dashboard:
 `Site administration > Server > Replication`
+
+Plugin's cron job configuration page is accessed at admin's dashboard:
+`Site administration > Server > Scheduled tasks`

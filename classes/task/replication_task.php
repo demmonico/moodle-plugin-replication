@@ -63,10 +63,10 @@ class replication_task extends \core\task\scheduled_task
             // diff db-stat.log db-stat-1.log
 
             // docker
-            // TODO FIX for Moodle add to setup rsync ONLY for one REPLICA!!!!!!!!!
-            // TODO FIX for Moodle config sitename
-            // TODO add run cron to script starts container
-            // TODO add copying file /docker-shared/replication-ssh-keys/id_rsa.pub to /home/dev????/.ssh/authorized_keys
+            // TODO FIX for Moodle - add to setup rsync
+            // TODO FIX for Moodle - config sitename
+            // TODO add run cron to script starts container       FIX call cron
+            // TODO add copying file /docker-shared/replication-ssh-keys/id_rsa.pub to /home/dev????/.ssh/authorized_keys   at offlines
 
             // +++
             // TODO add pack previous mirror version to backing up
